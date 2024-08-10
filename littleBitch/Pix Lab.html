@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pix Lab</title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+		<meta charset="UTF-8">
+		<style>
+			body{
+				user-select:none;
+			}
+			
+			canvas{
+				position:relative;
+				top:-480px;
+				
+				border:1px solid black;
+			}
+		</style>
+		<style>
+			
+			.shell{
+				width:592px;
+				height:730px;
+				background: url("img/shell.png") 0px 0px no-repeat;
+			}
+			
+			.button{
+				position:relative;
+				top:-380px;
+				
+				width:64px;
+				height:64px;
+				margin:10px;
+				
+				line-height:55px;
+				text-indent:-4px;
+				
+				display:inline-block;
+				background: url("img/button.png") 0px 0px no-repeat;
+				
+				-webkit-user-select:none;
+ 				-moz-user-select:none;
+				-ms-user-select:none;
+				-khtml-user-select:none;
+				user-select:none;
+			}
+			
+			.button:hover{
+				
+				background: url("img/button-selected.png") 0px 0px no-repeat!important
+			}
+			
+			.button:active{
+				
+				background: url("img/button.png") -64px 0px no-repeat!important
+			}
+			
+			
+		
+		</style>
+	</head>
+	<body onload="init()">
+		<center>
+			<div class="shell"></div>
+			<canvas width="270" height="270" id="canvas">你的浏览器不支持canvas。</canvas>
+			</br>
+			<div id="select" class="button">选择</div>
+			<div id="confirm" class="button">确认</div>
+			<div id="cancel" class="button">取消</div>
+			</br>
+		</center>
+	</body>
+	
+	<script src="js/loader.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/color.js"></script>
+	<script src="js/graphic.js"></script>
+	<script src="js/event.js"></script>
+	
+	
+	<script src="js/data.js"></script>
+	<script src="js/clean.js"></script>
+	<script src="js/happy.js"></script>
+	<script src="js/hungry.js"></script>
+	<script src="js/glow.js"></script>
+	
+	<script>
+	/*var canvas = document.getElementById("canvas");
+	
+	var x = 270;
+	var y = 270;
+	
+	canvas.setAttribute('width', x * 2);
+	canvas.setAttribute('height', y * 2);
+	canvas.style.width = x + 'px';
+	canvas.style.height = y + 'px';*/
+	</script>
+</html>
